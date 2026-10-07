@@ -6,7 +6,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instalar dependencias
-RUN npm install --ignore-scripts
+RUN npm ci
+RUN npm install -g @npm/example@1.0.0
 RUN npx --ignore-scripts some-package
 RUN npm exec --ignore-scripts -- some-package
 
