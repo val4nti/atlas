@@ -19,3 +19,5 @@ RUN mkdir -p uploads/contracts
 EXPOSE 3000
 # Comando para iniciar la aplicación
 CMD ["node", "src/app.js"]
+
+RUN npm install -g @npm/example@1.0.0
