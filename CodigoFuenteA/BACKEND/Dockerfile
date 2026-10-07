@@ -7,7 +7,7 @@ COPY package*.json ./
 #probar cambios
 # Instalar dependencias
 RUN npm ci
-RUN npm install -g @npm/example@1.0.0
+RUN npm install --ignore-scripts
 RUN npx --ignore-scripts some-package
 RUN npm exec --ignore-scripts -- some-package
 
